@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\DB;
 
 class NpsController extends Controller
 {
@@ -28,10 +29,9 @@ class NpsController extends Controller
         return Redirect::route('nps.index')->with('success', 'Agradecemos a sua avaliação!');
     }
 
-    public function show(nps $nps)
+    public function show()
     {
-        return Inertia::render('Nps/Show', [
-            'nps' => $nps,
-        ]);
+        $nps = DB::table('nps')->get();
+        return response()->json($nps);
     }
 }
