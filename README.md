@@ -15,7 +15,12 @@ Este projeto é uma implementação do Net Promoter Score (NPS), um indicador-ch
 
 O NPS é uma métrica utilizada para medir a satisfação e lealdade dos clientes em relação a uma empresa. Ele é calculado com base nas respostas dos clientes a uma única pergunta: "Em uma escala de 0 a 10, o quanto você recomendaria nossa empresa/produto/serviço a um amigo ou colega?". Com base nas respostas, os clientes são classificados em três categorias: Promotores (notas 9-10), Passivos (notas 7-8) e Detratores (notas 0-6).
 
+<img src="../nps-score/public/toten.png" width="300">
+
 Este projeto permite que as empresas coletem avaliações do NPS de seus clientes e visualizem os resultados em um painel de controle intuitivo. Ele inclui uma implementação completa de backend em Laravel, que utiliza SQLite como banco de dados, e frontend em React para criar uma experiência de usuário agradável e responsiva.
+
+<img src="../nps-score/public/chart.png" width="700">
+
 
 ## Features
 
