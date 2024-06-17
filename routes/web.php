@@ -25,8 +25,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource('nps', NpsController::class)
-    ->only(['index', 'store'])
-    ->middleware('auth', 'verified');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/nps', [NpsController::class, 'index'])->name('nps.index');
+    Route::post('/nps', [NpsController::class, 'store'])->name('nps.store');
+    Route::get('/nps/show', [NpsController::class, 'show'])->name('nps.show');
+});
+
 
 require __DIR__ . '/auth.php';
