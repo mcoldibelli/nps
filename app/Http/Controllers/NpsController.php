@@ -25,7 +25,7 @@ class NpsController extends Controller
             'score' => $validatedData['score'],
         ]);
 
-        return Redirect::route('nps.index')->with('success', 'Thank you for your feedback!');
+        return Redirect::route('nps.index')->with('success', 'Agradecemos a sua avaliação!');
     }
 
     public function show(nps $nps)
