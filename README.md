@@ -2,13 +2,12 @@
 
 Este projeto é uma implementação do Net Promoter Score (NPS), um indicador-chave de desempenho muito importante para as empresas. Comumente encontrado em totens para avaliar a experiência do cliente, esta implementação oferece uma solução acessível e gratuita para uso.
 
-## Índice
+## Tecnologias utilizadas
 
-- [Sobre](#sobre)
-- [Features](#features)
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Tecnologias](#tecnologias)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+
 
 ## Sobre
 
@@ -52,9 +51,3 @@ php artisan serve
 2. Clica em Register para criar uma conta
 3. Estando logado, na aba superior clique em NPS
 4. Os dados poderão ser visto na aba Dashboard
-
-
-# Tecnologias Utilizadas
-- Laravel
-- SQLite
-- React
